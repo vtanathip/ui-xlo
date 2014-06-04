@@ -1,6 +1,6 @@
 ## UI-XLO ##
 
-New User Interface of version
+New User Interface of android mobile version
 
 
 #### Tools ####
