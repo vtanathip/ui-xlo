@@ -25,6 +25,12 @@ public abstract class BaseActivity extends SherlockFragmentActivity implements D
     }
 
     @Override
+     protected void onDestroy() {
+        mActivityGraph = null;
+        super.onDestroy();
+    }
+
+    @Override
     public void inject(Object object) {
         mActivityGraph.inject(object);
     }
