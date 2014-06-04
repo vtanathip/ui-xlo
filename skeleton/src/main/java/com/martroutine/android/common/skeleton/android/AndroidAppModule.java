@@ -1,6 +1,7 @@
 package com.martroutine.android.common.skeleton.android;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 
 import com.martroutine.android.common.skeleton.qualifier.ForApplication;
 
@@ -22,5 +23,11 @@ public class AndroidAppModule {
     @ForApplication
     Context provideApplicationContext() {
         return sApplicationContext;
+    }
+
+    @Provides
+    @Singleton
+    SharedPreferences provideSharedPreferences() {
+        return sApplicationContext.getSharedPreferences(UIXLO, Context.MODE_PRIVATE);
     }
 }

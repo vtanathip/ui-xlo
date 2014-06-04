@@ -2,6 +2,7 @@ package com.martroutine.android.uixlo.activity;
 
 import android.app.Activity;
 import android.app.Fragment;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -11,8 +12,13 @@ import android.view.ViewGroup;
 
 import com.martroutine.android.ui_xlo.app.R;
 
+import javax.inject.Inject;
+
 
 public class MainActivity extends Activity {
+
+    @Inject
+    public SharedPreferences sharedPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
