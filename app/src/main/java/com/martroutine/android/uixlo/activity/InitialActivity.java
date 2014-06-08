@@ -1,6 +1,5 @@
 package com.martroutine.android.uixlo.activity;
 
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -30,7 +29,8 @@ public class InitialActivity extends BaseUIXLOActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_initial);
 
-        if (sharedPreferences.getBoolean("firstrun", true)) {
+        // comment this for testing instruction page
+        /*if (sharedPreferences.getBoolean("firstrun", true)) {*/
             sharedPreferences.edit().putBoolean("firstrun", false).commit();
 
             if (savedInstanceState == null) {
@@ -40,19 +40,20 @@ public class InitialActivity extends BaseUIXLOActivity{
                 Log.d(TAG, "Attach ViewPagger to InitialActivity.");
             }
 
-        } else {
+        /*} else {
             Intent intent = new Intent(this, MainActivity.class);
             Log.d(TAG, "Start MainActivity.");
             startActivity(intent);
             this.finish();
             Log.d(TAG, "InitialActivity finished.");
-        }
+        }*/
 
     }
 
     @Override
     public void onBackPressed() {
-        Log.d(TAG, "InitialActivity onBackPressed do nothing.");
+        super.onBackPressed();
+        Log.d(TAG, "In further InitialActivity onBackPressed will do nothing.");
     }
 
     public static class ViewPaggerHolderFragment extends Fragment {
