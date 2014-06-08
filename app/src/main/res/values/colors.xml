@@ -6,4 +6,5 @@
     <color name="white_transaparent">#80F5F5F5</color>
     <color name="black">#000000</color>
     <color name="green">#aabb00</color>
+    <color name="darkgreen">#919e01</color>
 </resources>
