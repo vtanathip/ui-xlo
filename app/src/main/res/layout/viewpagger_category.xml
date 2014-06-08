@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/instruction_category_imageview"
+        android:src="@drawable/instruction_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/instruction_image_top_position"
+        android:layout_marginRight="@dimen/instruction_image_right_left_position"
+        android:layout_marginLeft="@dimen/instruction_image_right_left_position" />
+
+    <com.martroutine.android.uixlo.custom.CustomTextView
+        android:id="@+id/instructionCategoryHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/instruction_category_header"
+        android:textSize="@dimen/instruction_text_header"
+        android:textColor="@color/white"
+        android:shadowColor="@color/black"
+        android:shadowDy="@integer/instruction_text_header_shadow_dy"
+        android:shadowRadius="@integer/instruction_text_header_radius_shadow"
+        android:layout_below="@+id/instruction_category_imageview"
+        android:layout_centerHorizontal="true"
+        app:selectFont="wdb" />
+
+    <com.martroutine.android.uixlo.custom.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/instruction_category_title"
+        android:id="@+id/instructionCategorytitle"
+        android:textSize="@dimen/instruction_text_title"
+        android:textColor="@color/black"
+        android:layout_below="@+id/instructionCategoryHeader"
+        android:layout_centerHorizontal="true"
+        app:selectFont="waffle"/>
+
+</RelativeLayout>

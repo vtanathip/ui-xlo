@@ -2,10 +2,10 @@ apply plugin: 'android'
 
 android {
     compileSdkVersion 19
-    buildToolsVersion "19.0.3"
+    buildToolsVersion "19.1.0"
 
     defaultConfig {
-        packageName "com.martroutine.android.ui_xlo.app"
+        packageName "com.martroutine.android.uixlo.app"
         minSdkVersion 15
         targetSdkVersion 19
         versionCode 1
@@ -25,4 +25,6 @@ dependencies {
 
     provided 'com.squareup.dagger:dagger-compiler:1.2.0'
     compile 'com.squareup.dagger:dagger:1.2.0'
+
+    compile 'com.inkapplications.viewpageindicator:library:2.4.2'
 }

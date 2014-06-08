@@ -4,5 +4,11 @@
     <string name="app_name">ui-xlo</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="instruction_category_header">หมวดหมู่</string>
+    <string name="instruction_category_title">รวมหมวดหมู่ขายของต่างๆ</string>
+    <string name="instruction_sell_header">อยากขาย</string>
+    <string name="instruction_sell_title">กดลงขายได้ใน 2 ขั้นตอน</string>
+    <string name="instruction_member_header">มุมสมาชิก</string>
+    <string name="instruction_member_title">จัดการระบบส่วนตัวได้ในที่เดียว</string>
 
 </resources>
