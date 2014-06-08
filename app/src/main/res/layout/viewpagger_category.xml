@@ -10,10 +10,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="100dp"
-        android:layout_marginRight="50dp"
+        android:layout_marginBottom="@dimen/instruction_image_bottom_position"
+        android:layout_marginRight="@dimen/instruction_image_right_left_position"
         android:layout_alignParentEnd="true"
-        android:layout_marginLeft="50dp" />
+        android:layout_marginLeft="@dimen/instruction_image_right_left_position" />
 
     <com.martroutine.android.uixlo.custom.CustomTextView
         android:layout_width="wrap_content"

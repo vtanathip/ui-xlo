@@ -6,4 +6,6 @@
     <dimen name="instruction_text_title">20sp</dimen>
     <dimen name="instruction_text_header_position">33dp</dimen>
     <dimen name="instruction_text_title_position">7dp</dimen>
+    <dimen name="instruction_image_bottom_position">100dp</dimen>
+    <dimen name="instruction_image_right_left_position">50dp</dimen>
 </resources>
