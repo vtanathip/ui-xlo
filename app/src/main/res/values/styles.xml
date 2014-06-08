@@ -6,7 +6,7 @@
     </style>
 
     <style name="CustomLinePageIndicator">
-        <item name="strokeWidth">6dp</item>
+        <item name="strokeWidth">4dp</item>
         <item name="lineWidth">43dp</item>
         <item name="unselectedColor">@color/white_transaparent</item>
         <item name="selectedColor">@color/orange</item>
