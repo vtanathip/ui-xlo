@@ -4,5 +4,7 @@
     <string name="app_name">ui-xlo</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="instruction_category_header">หมวดหมู่</string>
+    <string name="instruction_category_title">รวมหมวดหมู่ขายของต่างๆ</string>
 
 </resources>
