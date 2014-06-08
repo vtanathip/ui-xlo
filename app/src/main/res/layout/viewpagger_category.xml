@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
     <ImageView
@@ -13,21 +14,29 @@
         android:layout_marginRight="50dp"
         android:layout_alignParentEnd="true"
         android:layout_marginLeft="50dp" />
-    <TextView
+
+    <com.martroutine.android.uixlo.custom.CustomTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/instruction_category_header"
         android:id="@+id/instructionCategoryHeader"
-        android:layout_marginBottom="43dp"
+        android:layout_marginBottom="@dimen/instruction_text_header_position"
         android:layout_alignBottom="@+id/instruction_category_imageview"
-        android:layout_centerHorizontal="true" />
-    <TextView
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/instruction_text_header"
+        android:textColor="@color/white"
+        app:selectFont="wdb"/>
+
+    <com.martroutine.android.uixlo.custom.CustomTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/instruction_category_title"
         android:id="@+id/instructionCategorytitle"
         android:layout_alignBottom="@+id/instruction_category_imageview"
-        android:layout_marginBottom="15dp"
-        android:layout_centerHorizontal="true" />
+        android:layout_marginBottom="@dimen/instruction_text_title_position"
+        android:textSize="@dimen/instruction_text_title"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        app:selectFont="waffle"/>
 
 </RelativeLayout>
