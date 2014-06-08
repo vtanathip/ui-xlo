@@ -8,8 +8,8 @@
     <style name="CustomLinePageIndicator">
         <item name="strokeWidth">6dp</item>
         <item name="lineWidth">43dp</item>
-        <item name="unselectedColor">#FF888888</item>
-        <item name="selectedColor">#FF880000</item>
+        <item name="unselectedColor">@color/white_transaparent</item>
+        <item name="selectedColor">@color/orange</item>
         <item name="gapWidth">25dp</item>
     </style>
 
