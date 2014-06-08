@@ -25,6 +25,9 @@
         android:layout_centerHorizontal="true"
         android:textSize="@dimen/instruction_text_header"
         android:textColor="@color/white"
+        android:shadowColor="@color/black"
+        android:shadowDy="@integer/instruction_text_header_shadow_dy"
+        android:shadowRadius="@integer/instruction_text_header_radius_shadow"
         app:selectFont="wdb"/>
 
     <com.martroutine.android.uixlo.custom.CustomTextView

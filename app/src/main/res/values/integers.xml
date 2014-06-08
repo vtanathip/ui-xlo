@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="instruction_text_header_radius_shadow">1</integer>
+    <integer name="instruction_text_header_shadow_dy">2</integer>
+</resources>
