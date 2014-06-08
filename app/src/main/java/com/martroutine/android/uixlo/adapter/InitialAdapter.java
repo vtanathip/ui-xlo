@@ -4,6 +4,11 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.martroutine.android.uixlo.fragment.InstructionCategory;
+import com.martroutine.android.uixlo.fragment.InstructionMember;
+import com.martroutine.android.uixlo.fragment.InstructionSell;
+import com.martroutine.android.uixlo.fragment.InstructionWelcome;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,7 +21,10 @@ public class InitialAdapter extends FragmentPagerAdapter {
 
     protected static final List<Fragment> list = new ArrayList<Fragment>() {
         {
-
+            add(new InstructionCategory());
+            add(new InstructionSell());
+            add(new InstructionMember());
+            add(new InstructionWelcome());
         }
     };
 
