@@ -9,12 +9,13 @@
         android:src="@drawable/instruction_xlo_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="@dimen/instruction_image_right_left_position"
-        android:layout_alignParentEnd="true"
-        android:layout_marginLeft="@dimen/instruction_image_right_left_position"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:cropToPadding="false"
-        android:padding="50dp" />
+        android:layout_marginTop="@dimen/instruction_image_top_position"
+        android:layout_marginRight="@dimen/instruction_image_right_left_position"
+        android:layout_marginLeft="@dimen/instruction_image_right_left_position"
+        android:paddingLeft="@dimen/instruction_image_right_left_position"
+        android:paddingRight="@dimen/instruction_image_right_left_position"/>
 
     <com.martroutine.android.uixlo.custom.CustomButton
         android:id="@+id/instruction_welcome_button"
@@ -25,7 +26,7 @@
         android:paddingLeft="30dp"
         android:textColor="@color/white"
         android:text="เข้าสู่หน้าแรก OLX"
-        android:layout_alignBottom="@+id/instruction_welcome_imageview"
+        android:layout_below="@+id/instruction_welcome_imageview"
         android:layout_centerHorizontal="true"
         app:selectFont="wdb"/>
 </RelativeLayout>

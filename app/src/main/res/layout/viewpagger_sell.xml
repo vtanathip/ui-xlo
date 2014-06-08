@@ -9,36 +9,34 @@
         android:src="@drawable/instruction_sell"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="@dimen/instruction_image_bottom_position"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/instruction_image_top_position"
         android:layout_marginRight="@dimen/instruction_image_right_left_position"
-        android:layout_alignParentEnd="true"
-        android:layout_marginLeft="@dimen/instruction_image_right_left_position" />
+        android:layout_marginLeft="@dimen/instruction_image_right_left_position"  />
 
     <com.martroutine.android.uixlo.custom.CustomTextView
+        android:id="@+id/instructionSellHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/instruction_sell_header"
-        android:id="@+id/instructionSellHeader"
-        android:layout_marginBottom="@dimen/instruction_text_header_position"
-        android:layout_alignBottom="@+id/instruction_sell_imageview"
-        android:layout_centerHorizontal="true"
         android:textSize="@dimen/instruction_text_header"
         android:textColor="@color/white"
         android:shadowColor="@color/black"
         android:shadowDy="@integer/instruction_text_header_shadow_dy"
         android:shadowRadius="@integer/instruction_text_header_radius_shadow"
-        app:selectFont="wdb"/>
+        android:layout_below="@+id/instruction_sell_imageview"
+        android:layout_centerHorizontal="true"
+        app:selectFont="wdb" />
 
     <com.martroutine.android.uixlo.custom.CustomTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/instruction_sell_title"
         android:id="@+id/instructionSelltitle"
-        android:layout_alignBottom="@+id/instruction_sell_imageview"
-        android:layout_marginBottom="@dimen/instruction_text_title_position"
         android:textSize="@dimen/instruction_text_title"
         android:textColor="@color/black"
+        android:layout_below="@+id/instructionSellHeader"
         android:layout_centerHorizontal="true"
         app:selectFont="waffle"/>
 
