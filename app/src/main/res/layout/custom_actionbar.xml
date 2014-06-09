@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <com.martroutine.android.uixlo.custom.CustomTextView
+        android:gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="@string/actionbar_text_title"
+        android:textSize="@dimen/actionbar_text_size"
+        android:textColor="@color/white"
+        android:shadowColor="@color/black"
+        android:shadowDy="@integer/instruction_text_header_shadow_dy"
+        android:shadowRadius="@integer/instruction_text_header_radius_shadow"
+        android:layout_centerHorizontal="true"
+        app:selectFont="wdb" />
+
+</RelativeLayout>

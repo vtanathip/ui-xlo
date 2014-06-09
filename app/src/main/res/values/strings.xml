@@ -10,5 +10,6 @@
     <string name="instruction_sell_title">กดลงขายได้ใน 2 ขั้นตอน</string>
     <string name="instruction_member_header">มุมสมาชิก</string>
     <string name="instruction_member_title">จัดการระบบส่วนตัวได้ในที่เดียว</string>
+    <string name="actionbar_text_title">หาอะไรก็เจอ กดเลย!</string>
 
 </resources>

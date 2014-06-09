@@ -7,4 +7,5 @@
     <dimen name="instruction_image_top_position">80dp</dimen>
     <dimen name="instruction_image_right_left_position">50dp</dimen>
     <dimen name="actionbar_height">55dp</dimen>
+    <dimen name="actionbar_text_size">18sp</dimen>
 </resources>
