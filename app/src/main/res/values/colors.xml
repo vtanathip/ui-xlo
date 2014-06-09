@@ -7,4 +7,6 @@
     <color name="black">#000000</color>
     <color name="green">#aabb00</color>
     <color name="darkgreen">#919e01</color>
+
+    <color name="actionbar_background">#3a3a3a</color>
 </resources>
