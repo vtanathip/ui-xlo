@@ -12,4 +12,10 @@
     <string name="instruction_member_title">จัดการระบบส่วนตัวได้ในที่เดียว</string>
     <string name="actionbar_text_title">หาอะไรก็เจอ กดเลย!</string>
 
+    <string-array name="tab_name">
+        <item>หมวดหมู่</item>
+        <item>ลงขาย</item>
+        <item>สมาชิก</item>
+    </string-array>
+
 </resources>

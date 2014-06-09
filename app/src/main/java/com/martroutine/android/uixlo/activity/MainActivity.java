@@ -1,14 +1,18 @@
 package com.martroutine.android.uixlo.activity;
 
-import android.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.actionbarsherlock.app.ActionBar;
+import com.actionbarsherlock.app.SherlockFragment;
 import com.actionbarsherlock.view.Menu;
 import com.martroutine.android.ui_xlo.app.R;
+import com.martroutine.android.uixlo.adapter.TabAdapter;
 
 
 public class MainActivity extends BaseUIXLOActivity {
@@ -25,7 +29,7 @@ public class MainActivity extends BaseUIXLOActivity {
         mActionBar.setDisplayShowCustomEnabled(true);
 
         if (savedInstanceState == null) {
-            getFragmentManager().beginTransaction()
+            getSupportFragmentManager().beginTransaction()
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
         } 
@@ -37,16 +41,66 @@ public class MainActivity extends BaseUIXLOActivity {
         return true;
     }
 
-    public static class PlaceholderFragment extends Fragment {
+    public static class PlaceholderFragment extends SherlockFragment implements ActionBar.TabListener {
 
-        public PlaceholderFragment() {
-        }
+        private ViewPager viewPager;
+        private ActionBar actionBar;
+        private TabAdapter mAdapter;
+        private String[] tabs;
 
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
+
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+
+            tabs = getResources().getStringArray(R.array.tab_name);
+            viewPager = (ViewPager) rootView.findViewById(R.id.pager);
+
+            actionBar = getSherlockActivity().getSupportActionBar();
+            mAdapter = new TabAdapter(getActivity().getSupportFragmentManager());
+
+            viewPager.setAdapter(mAdapter);
+            actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+
+            for (String tab_name : tabs) {
+                actionBar.addTab(actionBar.newTab().setText(tab_name).setTabListener(this));
+                Log.d(TAG, "MainActivity add tab : " + tab_name);
+            }
+
+            viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+
+                @Override
+                public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+                }
+
+                @Override
+                public void onPageSelected(int position) {
+                    actionBar.setSelectedNavigationItem(position);
+                }
+
+                @Override
+                public void onPageScrollStateChanged(int state) {
+                }
+            });
+
+
             return rootView;
+        }
+
+        @Override
+        public void onTabSelected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
+
+        }
+
+        @Override
+        public void onTabUnselected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
+
+        }
+
+        @Override
+        public void onTabReselected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
+
         }
     }
 }
