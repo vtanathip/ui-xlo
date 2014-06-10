@@ -7,6 +7,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockFragment;
@@ -63,9 +65,23 @@ public class MainActivity extends BaseUIXLOActivity {
             viewPager.setAdapter(mAdapter);
             actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 
-            for (String tab_name : tabs) {
-                actionBar.addTab(actionBar.newTab().setText(tab_name).setTabListener(this));
-                Log.d(TAG, "MainActivity add tab : " + tab_name);
+            for (int i = 0; i< tabs.length; i++) {
+                View customView = inflater.inflate(R.layout.custom_actionbar_tab, container, false);
+                ImageView customImageView = (ImageView) customView.findViewById(R.id.tabImageView);
+
+                switch (i) {
+                    case 0:  customImageView.setImageResource(R.drawable.category);
+                        break;
+                    case 1:  customImageView.setImageResource(R.drawable.announcement);
+                        break;
+                    case 2:  customImageView.setImageResource(R.drawable.member);
+                        break;
+                }
+
+                TextView customTextView = (TextView) customView.findViewById(R.id.tabTextView);
+                customTextView.setText(tabs[i]);
+                actionBar.addTab(actionBar.newTab().setCustomView(customView).setTabListener(this));
+                Log.d(TAG, "MainActivity add tab : " + tabs[i]);
             }
 
             viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
