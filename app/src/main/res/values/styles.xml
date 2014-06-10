@@ -1,6 +1,6 @@
 <resources>
 
-    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar"></style>
+    <style name="AppBaseTheme" parent="Theme.Sherlock.Light.DarkActionBar"></style>
 
     <style name="AppTheme" parent="AppBaseTheme">
         <item name="android:actionBarStyle">@style/UIXLOActionBar</item>
@@ -20,6 +20,15 @@
         <item name="unselectedColor">@color/white_transaparent</item>
         <item name="selectedColor">@color/orange</item>
         <item name="gapWidth">25dp</item>
+    </style>
+
+    <style name="CustomSherlockTheme" parnet="Theme.Sherlock.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/UIXLOTabActionBar</item>
+    </style>
+
+    <style name="UIXLOTabActionBar" parent="Widget.Sherlock.Light.ActionBar">
+        <item name="android:background">@color/actionbar_background</item>
+        <item name="android:backgroundStacked">@color/swipe_background</item>
     </style>
 
 </resources>

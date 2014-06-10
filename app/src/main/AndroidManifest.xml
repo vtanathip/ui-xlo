@@ -20,8 +20,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.martroutine.android.uixlo.activity.MainActivity">
-            <action android:name="android.intent.action.VIEW" />
+        <activity android:name="com.martroutine.android.uixlo.activity.MainActivity"
+            android:theme="@style/CustomSherlockTheme"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
         </activity>
     </application>
 
