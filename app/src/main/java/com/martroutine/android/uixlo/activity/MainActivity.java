@@ -13,7 +13,7 @@ import android.widget.TextView;
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockFragment;
 import com.actionbarsherlock.view.Menu;
-import com.martroutine.android.ui_xlo.app.R;
+import com.martroutine.android.uixlo.app.R;
 import com.martroutine.android.uixlo.adapter.TabAdapter;
 
 
