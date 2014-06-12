@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">ui-xlo</string>
+    <string name="app_name">vtanathip</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="instruction_category_header">หมวดหมู่</string>
@@ -11,5 +11,11 @@
     <string name="instruction_member_header">มุมสมาชิก</string>
     <string name="instruction_member_title">จัดการระบบส่วนตัวได้ในที่เดียว</string>
     <string name="actionbar_text_title">หาอะไรก็เจอ กดเลย!</string>
+
+    <string-array name="tab_name">
+        <item>หมวดหมู่</item>
+        <item>ลงขาย</item>
+        <item>สมาชิก</item>
+    </string-array>
 
 </resources>

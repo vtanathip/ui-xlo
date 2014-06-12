@@ -1,9 +1,12 @@
 <resources>
 
-    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar"></style>
+    <style name="AppBaseTheme" parent="Theme.Sherlock.Light.DarkActionBar"></style>
 
     <style name="AppTheme" parent="AppBaseTheme">
         <item name="android:actionBarStyle">@style/UIXLOActionBar</item>
+        <item name="android:actionBarTabStyle">@style/UIXLOActionTabBar</item>
+        <item name="actionBarDivider">@color/swipe_background</item>
+        <item name="android:actionBarDivider">@color/swipe_background</item>
     </style>
 
     <!-- Action Bar theme. -->
@@ -12,6 +15,11 @@
         <item name="android:icon">@android:color/transparent</item>
         <item name="android:displayOptions">showHome|useLogo</item>
         <item name="android:height">@dimen/actionbar_height</item>
+    </style>
+
+    <!-- Action Bar Tab theme. -->
+    <style name="UIXLOActionTabBar" parent="Widget.Sherlock.ActionBar.TabView">
+        <item name="android:background">@drawable/custom_actionbar_tab</item>
     </style>
 
     <style name="CustomLinePageIndicator">

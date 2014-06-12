@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.martroutine.android.common.skeleton.fragment.BaseFragment;
-import com.martroutine.android.ui_xlo.app.R;
+import com.martroutine.android.uixlo.app.R;
 
 /**
  * Created by MARTROUTINE on 08/06/2014.

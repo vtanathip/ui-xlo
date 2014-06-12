@@ -9,7 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.martroutine.android.ui_xlo.app.R;
+import com.martroutine.android.uixlo.app.R;
 import com.martroutine.android.uixlo.adapter.InitialAdapter;
 import com.viewpagerindicator.LinePageIndicator;
 

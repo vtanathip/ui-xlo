@@ -9,4 +9,5 @@
     <color name="darkgreen">#919e01</color>
 
     <color name="actionbar_background">#3a3a3a</color>
+    <color name="swipe_background">#555555</color>
 </resources>
