@@ -4,6 +4,9 @@
 
     <style name="AppTheme" parent="AppBaseTheme">
         <item name="android:actionBarStyle">@style/UIXLOActionBar</item>
+        <item name="android:actionBarTabStyle">@style/UIXLOActionTabBar</item>
+        <item name="actionBarDivider">@color/swipe_background</item>
+        <item name="android:actionBarDivider">@color/swipe_background</item>
     </style>
 
     <!-- Action Bar theme. -->
@@ -14,21 +17,17 @@
         <item name="android:height">@dimen/actionbar_height</item>
     </style>
 
+    <!-- Action Bar Tab theme. -->
+    <style name="UIXLOActionTabBar" parent="Widget.Sherlock.ActionBar.TabView">
+        <item name="android:background">@drawable/custom_actionbar_tab</item>
+    </style>
+
     <style name="CustomLinePageIndicator">
         <item name="strokeWidth">4dp</item>
         <item name="lineWidth">43dp</item>
         <item name="unselectedColor">@color/white_transaparent</item>
         <item name="selectedColor">@color/orange</item>
         <item name="gapWidth">25dp</item>
-    </style>
-
-    <style name="CustomSherlockTheme" parnet="Theme.Sherlock.Light.DarkActionBar">
-        <item name="android:actionBarStyle">@style/UIXLOTabActionBar</item>
-    </style>
-
-    <style name="UIXLOTabActionBar" parent="Widget.Sherlock.Light.ActionBar">
-        <item name="android:background">@color/actionbar_background</item>
-        <item name="android:backgroundStacked">@color/swipe_background</item>
     </style>
 
 </resources>
